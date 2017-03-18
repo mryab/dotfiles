@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mryabinin/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
