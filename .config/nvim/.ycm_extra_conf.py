@@ -6,10 +6,11 @@ import ycm_core
 
 BASE_FLAGS = [
     '-Wall',
-    '-Werror',
     '-std=c11',
+    '-pedantic',
     '-isystem',
-    '-I','/usr/include/'
+    '-I/usr/include/',
+    '-I/usr/lib/'
 ]
 
 SOURCE_EXTENSIONS = [

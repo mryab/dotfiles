@@ -3,10 +3,8 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # vim
-ln -s ${BASEDIR}/.config/nvim/init.vim ~/.vimrc
+ln -sf ${BASEDIR}/.config/nvim/init.vim ~/.config/nvim/init.vim
 
 # bash
-ln -s ${BASEDIR}/.bash_profile ~/.bashrc
+ln -sf ${BASEDIR}/.zshrc ~/.zshrc
 
-# git
-ln -s ${BASEDIR}/gitconfig ~/.gitconfig
