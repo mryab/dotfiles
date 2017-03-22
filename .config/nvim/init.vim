@@ -39,7 +39,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'bling/vim-airline'
 Plug 'rhysd/vim-clang-format'
 Plug 'dracula/vim'
-Plug 'mhartington/oceanic-next'
 Plug 'bronson/vim-trailing-whitespace'
 call plug#end()
 colorscheme OceanicNext
@@ -61,6 +60,7 @@ let g:ycm_open_loclist_on_ycm_diags = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+nnoremap <Tab> <c-w>w
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = '%3l:%2v'
 let g:airline#extensions#ycm#enabled = 1
