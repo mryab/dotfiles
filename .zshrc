@@ -59,16 +59,18 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew brew-cask debian osx pip sudo extract z zsh-syntax-highlighting zsh-completions zsh-autosuggestions)
+plugins=(brew brew-cask debian osx pip sudo extract z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+export SPACESHIP_PROMPT_SYMBOL=❯
 export SPACESHIP_PROMPT_SEPARATE_LINE=false
 export SPACESHIP_PROMPT_ADD_NEWLINE=false
 export SPACESHIP_PROMPT_TRUNC=0
-
+export SPACESHIP_PREFIX_SHOW=false
+setopt menu_complete
+bindkey -M menuselect '^M' .accept-line
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
