@@ -59,7 +59,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew brew-cask debian osx pip sudo extract z zsh-syntax-highlighting)
+plugins=(brew debian osx pip sudo extract z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,10 +90,6 @@ c(){
     then
         clang -m32 -fsanitize=address,undefined -std=c11 -Wall -Werror "$@" -o b.out
     fi
-}
-mk () {
-    mkdir "$1"
-    cd "$1"
 }
 ts(){
     if ! [ $# -eq 0 ]
