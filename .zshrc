@@ -82,7 +82,6 @@ bindkey -M menuselect '^M' .accept-line
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.zshrc_local
 alias vim=nvim
 alias ..="cd .."
 c(){
@@ -108,3 +107,4 @@ v(){
         cat $f;
     done
 }
+source ~/.zshrc_local

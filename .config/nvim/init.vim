@@ -17,7 +17,6 @@ set si
 set backspace=indent,eol,start
 set backspace=2
 set wildmenu
-set termguicolors
 filetype plugin on
 filetype indent on
 syntax enable
@@ -33,10 +32,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdcommenter'
 Plug 'bling/vim-airline'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'mhartington/oceanic-next'
 call plug#end()
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+set background=dark
 set completeopt-=preview
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = '%3l:%2v'
